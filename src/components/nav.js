@@ -38,8 +38,8 @@ const Svg = styled.header`
   font-weight: 550;
   padding-left: 200px;
   ${Screen.largePhone`
-    display: none;
-`};
+    padding-left: 10px;
+  `};
 `;
 const ListContainer = styled.div`
   font-size: ${Basics.fontSize.small};
@@ -49,11 +49,18 @@ const ListContainer = styled.div`
   padding-top: 45px;
   right: 140px;
   font-weight: 550;
+  ${Screen.largePhone`
+  padding-top: 40px;
+  right: 10px;
+  `};
+  
 `;
 const NavList = styled.div`
-  background-color: white;
   height: 23px;
   padding-right: 50px;
+  ${Screen.largePhone`
+    padding-right: 30px;
+  `};
 `;
 export default class Nav extends React.Component {
   constructor() {

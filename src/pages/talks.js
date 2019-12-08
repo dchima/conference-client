@@ -2,16 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 import { GlobalStyle, Screen } from 'styles';
-import { Nav, TalkCard } from 'components';
+import { Nav, TalkCard, MeetupForm } from 'components';
 
-const VisionContainer = styled.div`
+const TalksContainer = styled.div`
   position: relative;
   display: flex;
-  margin: 200px 150px 0px 280px;
-  flex-direction: column;
+  margin: 200px 280px 0px 280px;
   align-items: center;
+  flex-direction: column;
   ${Screen.largePhone`
-    margin-left: 170px;
+    margin-left: 10px;
+    margin-right: 10px;
 `};
 `;
 
@@ -48,17 +49,18 @@ class App extends React.Component {
   render() {
     const talks = this.state.talks.map((talk) => <TalkCard key={talk.id} content={talk} />);
     return (
-      <VisionContainer>
+      <TalksContainer>
     <Helmet>
       <meta charSet="utf-8" />
       <title>Talks</title>
     </Helmet>
      <GlobalStyle />
+     <MeetupForm />
      <Batch>
       {talks}
      </Batch>
      <Nav />
-  </VisionContainer>
+  </TalksContainer>
     );
   }
 }
