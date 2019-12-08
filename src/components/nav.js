@@ -61,6 +61,9 @@ const NavList = styled.div`
   ${Screen.largePhone`
     padding-right: 30px;
   `};
+  ${Screen.smallPhone`
+    padding-right: 15px;
+  `};
 `;
 export default class Nav extends React.Component {
   constructor() {

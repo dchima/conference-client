@@ -11,7 +11,7 @@ const Card = styled.div`
   flex-direction: column;
   margin-right: 20px;
   margin-bottom: 20px;
-  width: 200px;
+  width: 250px;
   background-color: ${Basics.colors.white};
   ${Screen.largePhone`
     margin: 20px;
