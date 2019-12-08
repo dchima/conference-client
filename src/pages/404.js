@@ -25,7 +25,7 @@ function App() {
     <PageContainer>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Fourshores | 404</title>
+        <title>404</title>
       </Helmet>
       <GlobalStyle />
       <BodyText>
